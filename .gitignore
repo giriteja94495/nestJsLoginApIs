@@ -1,0 +1,16 @@
+# Ignore Node.js related files and folders
+node_modules/
+npm-debug.log
+
+# Ignore generated JavaScript files and sourcemaps
+dist/
+*.js.map
+
+# Ignore environment-specific configuration files
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+
+# Ignore any other files or directories specific to your project or workflow
