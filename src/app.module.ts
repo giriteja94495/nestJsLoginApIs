@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user/user.entity';
 import { UserModule } from './user/user.module';
+import { JsonFileModule } from './jsonDataApi/json-file.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -17,6 +18,7 @@ import { UserModule } from './user/user.module';
       synchronize: true,
     }),
     UserModule,
+    JsonFileModule,
   ],
   controllers: [AppController],
   providers: [AppService],
